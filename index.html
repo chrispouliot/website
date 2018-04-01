@@ -32,9 +32,19 @@
       a {
         text-decoration: none;
         color: black;
+        display:inline-block;
       }
-      a:hover {
-        font-weight: 350;
+      h2 a:hover {
+        font-weight: 280;
+      }
+      h2 a::after {
+        margin-top: -0.22em;
+        display: block;
+        content: attr(title);
+        font-weight: 280;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
       }
       ul {
         list-style: none;
@@ -61,7 +71,7 @@
   <body>
     <main>
       <h1>Chris Pouliot</h1>
-      <h2>Platform Developer @ <a href="https://www.sendwithus.com" target="_blank">Sendwithus</a></h2>
+      <h2>Platform Developer @ <a href="https://www.sendwithus.com" title="Sendwithus" target="_blank">Sendwithus</a></h2>
       <h3>Victoria, BC</h3>
       <ul>
         <li><a href="https://www.github.com/moxuz" target="_blank"><i class="fab fa-github"></i></a></li>
