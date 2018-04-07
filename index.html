@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Chris Pouliot</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <style>
@@ -34,18 +36,6 @@
         color: black;
         display:inline-block;
       }
-      h2 a:hover {
-        font-weight: 280;
-      }
-      h2 a::after {
-        margin-top: -0.22em;
-        display: block;
-        content: attr(title);
-        font-weight: 280;
-        height: 0;
-        overflow: hidden;
-        visibility: hidden;
-      }
       ul {
         list-style: none;
         padding: 0;
@@ -55,7 +45,10 @@
         display: inline-block;
         padding: 0.1em;
       }
-      @media screen and (max-width: 400px) {
+      .hover-grey *:hover {
+        color: #bababa;
+      }
+      @media screen and (max-width: 450px) {
         h1 {
           font-size: 1.7em;
         }
@@ -71,9 +64,9 @@
   <body>
     <main>
       <h1>Chris Pouliot</h1>
-      <h2>Platform Developer @ <a href="https://www.sendwithus.com" title="Sendwithus" target="_blank">Sendwithus</a></h2>
+      <h2 class="hover-grey">Platform Developer @ <a href="https://www.sendwithus.com" title="Sendwithus" target="_blank">Sendwithus</a></h2>
       <h3>Victoria, BC</h3>
-      <ul>
+      <ul class="hover-grey">
         <li><a href="https://www.github.com/moxuz" target="_blank"><i class="fab fa-github"></i></a></li>
         <li><a href="https://twitter.com/christophepoug" target="_blank"><i class="fab fa-twitter"></i></a></li>
         <li><a href="mailto:me@chrispouliot.codes" target="_blank"><i class="far fa-envelope"></i></a></li>
